@@ -1,0 +1,17 @@
+[
+  {
+    "type": "hero",
+    "imageURI": "https://picsum.photos/700/400"
+  },
+  {
+    "type": "image-text",
+    "imageURI": "https://picsum.photos/200",
+    "text": "this is some text",
+    "title": "Airplane",
+    "leftToRight": true
+  },
+  {
+    "type": "data",
+    "url": "https://emojihub.yurace.pro/api/random"
+  }
+]
