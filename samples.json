@@ -6,12 +6,19 @@
   {
     "type": "image-text",
     "imageURI": "https://picsum.photos/200",
-    "text": "this is some text",
-    "title": "Airplane",
+    "text": "This is some details about a random image",
+    "title": "Random Image Number One",
     "leftToRight": true
   },
   {
     "type": "data",
     "url": "https://emojihub.yurace.pro/api/random"
+  },
+  {
+    "type": "image-text",
+    "imageURI": "https://picsum.photos/400/500",
+    "text": "These are other details about another image",
+    "title": "Random Image Number Two",
+    "leftToRight": true
   }
 ]

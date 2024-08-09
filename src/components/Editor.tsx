@@ -1,5 +1,6 @@
 import { ChangeEvent, KeyboardEvent, useState } from 'react'
 import { CanvasNodeList } from '../types'
+import { parseCanvasNodeList } from '../utils/parser'
 
 export default function Editor({ onSave }: { onSave: (data: CanvasNodeList) => void }) {
   const [jsonText, setJsonText] = useState('')
@@ -23,7 +24,9 @@ export default function Editor({ onSave }: { onSave: (data: CanvasNodeList) => v
               e.preventDefault()
 
               try {
-                const jsonData: CanvasNodeList = JSON.parse(jsonText)
+                const jsonData = parseCanvasNodeList(jsonText)
+                console.log('data')
+                console.log(jsonData)
                 onSave(jsonData)
               } catch (error) {
                 console.warn(error)
